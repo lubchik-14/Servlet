@@ -1,0 +1,115 @@
+body {
+    color: darkslategrey;
+    text-align: center;
+}
+
+input, select {
+    margin-bottom: 3px;
+    padding: 0;
+    border: 1px solid darkslategrey;
+}
+
+p {
+    color: crimson;
+    font-weight: bold;
+    margin: 2px 0 2px 0;
+}
+
+h1, h4 {
+    margin: 5px 0 5px 0;
+}
+
+table {
+    margin: 7px;
+    width: 95%;
+    table-layout: fixed;
+    border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+    border: 2px solid darkslategrey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    text-align: left;
+}
+
+td {
+    word-wrap:break-word;
+    padding: 2px 5px;
+    border: 1px dotted darkslategrey;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: darkslategrey;
+    font-weight: 600;
+}
+
+a.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+select:required:invalid {
+    color: #666;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: #000;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+.form {
+    width: 300px;
+    height: auto;
+    border: 3px double darkslategrey;
+    border-radius: 10px;
+    background-color: #c9ffcb;
+}
+
+.home input, .create input, select, input[id="deleteButton"] {
+    width: 160px;
+}
+
+.header {
+    margin-top: 5px;
+}
+
+.footer {
+    margin-bottom: 5px;
+}
+
+.btns {
+    width: 100%;
+}
+
+.btns ul li {
+    display: inline-block;
+}
+
+.rgt {
+    margin-right: 10px;
+    float: right;
+}
+
+.lft {
+    margin-left: 10px;
+    float: left;
+}
